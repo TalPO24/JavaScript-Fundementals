@@ -104,6 +104,7 @@ console.log(ageTal, ageSarah, averageAge)
 
 
 //* TK-1
+/*
 //  let country = "Israel";
 //  let continent = "Middle East"
 //  let population = 9000000
@@ -133,3 +134,19 @@ const johnBmi = johnWeight / (johnHeight ** 2)
 const markBmi = markWeight / (markHeight ** 2)
 const markHigherBmi = markBmi > johnBmi
 console.log(markBmi, johnBmi, markHigherBmi)
+*/
+
+//* STRINGS AND TEMPLATE LITERALS
+const firstName = 'Jonas'
+const job = 'teacher!'
+const birthYear = 1991;
+const currentYear = 2023;
+
+
+const jonas = "I'm " + firstName + ', a ' + (currentYear - birthYear) + " years old " + job
+console.log(jonas)
+
+const jonasNew = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job}`
+console.log(jonasNew)
+
+console.log(`just a regular string...`)
