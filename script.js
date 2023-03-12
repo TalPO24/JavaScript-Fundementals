@@ -153,6 +153,7 @@ console.log(`just a regular string...`)
 
 
 //* IF / ELSE STATEMENTS
+/*
 const age = 15;
 const isOldEnough = age >= 18
 
@@ -172,10 +173,11 @@ if (birthYear <= 2000) {
     century = 21
 }
 console.log(century)
+*/
 
 
 //* TK-2
-
+/*
 const johnWeight = 85
 const johnHeight = 1.76
 
@@ -191,3 +193,19 @@ if (markBmi > johnBmi) {
 } else {
     console.log(`John BMI ${johnBmi} is higher then Mark's BMI ${markBmi}`)
 }
+*/
+
+//* TYPE CONVERSION 
+const inputYear = '1991'
+console.log(Number(inputYear), inputYear)
+console.log(Number(inputYear) + 18)
+
+console.log(Number('jonas')) // NAN = not a number
+console.log(typeof NaN)
+console.log(String(23), 23)
+
+
+//* TYPE COERCION
+console.log('I am ' + 23 + ' years old')
+console.log('23' - '10' - 3)
+console.log('23' * '2')
