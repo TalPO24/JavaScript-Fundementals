@@ -55,6 +55,7 @@ console.log(lastName)
 
 
 //* MATH OPERATORS
+/*
 const now = 2037
 const ageTal = now - 1996
 const ageSarah = now - 2018
@@ -83,6 +84,22 @@ console.log(ageSarah >= 18)
 
 const isFullAge = ageSarah >= 18
 console.log(now - 196 > now - 2018)
+*/
+
+
+
+const now = 2037
+const ageTal = now - 1996
+const ageSarah = now - 2018
+console.log(now - 196 > now - 2018)
+
+let x, y;
+x = y = 25 - 10 - 5 // x = y = 10 , x = 10
+console.log(x, y)
+
+const averageAge = (ageTal + ageSarah) / 2
+console.log(ageTal, ageSarah, averageAge)
+
 
 
 
@@ -94,3 +111,25 @@ console.log(now - 196 > now - 2018)
 //  console.log(country)
 //  console.log(continent)
 //  console.log(population)
+
+// const johnWeight = 92
+// const johnHeight = 1.95
+
+// const markWeight = 78
+// const markHeight = 1.69
+
+// const johnBmi = johnWeight / (johnHeight ** 2)
+// const markBmi = markWeight / (markHeight ** 2)
+// const markHigherBmi = markBmi > johnBmi
+// console.log(markBmi, johnBmi, markHigherBmi)
+
+const johnWeight = 85
+const johnHeight = 1.76
+
+const markWeight = 95
+const markHeight = 1.88
+
+const johnBmi = johnWeight / (johnHeight ** 2)
+const markBmi = markWeight / (markHeight ** 2)
+const markHigherBmi = markBmi > johnBmi
+console.log(markBmi, johnBmi, markHigherBmi)
