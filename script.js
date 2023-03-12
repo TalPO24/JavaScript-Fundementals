@@ -84,9 +84,6 @@ console.log(ageSarah >= 18)
 
 const isFullAge = ageSarah >= 18
 console.log(now - 196 > now - 2018)
-*/
-
-
 
 const now = 2037
 const ageTal = now - 1996
@@ -99,6 +96,7 @@ console.log(x, y)
 
 const averageAge = (ageTal + ageSarah) / 2
 console.log(ageTal, ageSarah, averageAge)
+*/
 
 
 
@@ -137,6 +135,7 @@ console.log(markBmi, johnBmi, markHigherBmi)
 */
 
 //* STRINGS AND TEMPLATE LITERALS
+/*
 const firstName = 'Jonas'
 const job = 'teacher!'
 const birthYear = 1991;
@@ -150,3 +149,45 @@ const jonasNew = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job
 console.log(jonasNew)
 
 console.log(`just a regular string...`)
+*/
+
+
+//* IF / ELSE STATEMENTS
+const age = 15;
+const isOldEnough = age >= 18
+
+if (isOldEnough) {
+    console.log('sarah can start driving license🚗')
+} else {
+    const yearsLeft = 18 - age
+    console.log(`sarah is too young. Wait another ${yearsLeft} years :)`)
+}
+
+const birthYear = 2021
+
+let century;
+if (birthYear <= 2000) {
+    century = 20
+} else {
+    century = 21
+}
+console.log(century)
+
+
+//* TK-2
+
+const johnWeight = 85
+const johnHeight = 1.76
+
+const markWeight = 95
+const markHeight = 1.88
+
+const johnBmi = johnWeight / (johnHeight ** 2)
+const markBmi = markWeight / (markHeight ** 2)
+
+
+if (markBmi > johnBmi) {
+    console.log(`Marks BMI ${markBmi} is higher then John's ${johnBmi}`)
+} else {
+    console.log(`John BMI ${johnBmi} is higher then Mark's BMI ${markBmi}`)
+}
