@@ -239,7 +239,7 @@ if (height) {
 
 
 //* EQUALITY OPERATORS == VS ===
-
+/*
 const age = 18
 if (age === 18)
     console.log("You just bacame an adult (strict)")
@@ -261,4 +261,67 @@ if (favourite === 23) {
 
 if (favourite !== 23) {
     console.log("Why not 23?")
+}
+*/
+
+//* BOOLEAN
+//* LOGICAL OPERATORS
+/*
+const hasDriversLicense = true //A
+const hasGoodVision = true //B
+
+console.log(hasDriversLicense && hasGoodVision) //* && - AND OPERATOR 
+console.log(hasDriversLicense || hasGoodVision) //* || - OR OPERATOR
+console.log(!hasDriversLicense) //* ! - NOT OPERATOR
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log("Sarah is able to drive")
+// } else {
+//     console.log("Someone else should drive...")
+// }
+const isTired = false // C
+console.log(hasDriversLicense && hasGoodVision && isTired)
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive")
+} else {
+    console.log("Someone else should drive...")
+}
+*/
+
+//* TK-3
+
+//*1)
+// const avgDolphins = (96 + 108 + 89) / 3
+// const avgKoalas = (88 + 91 + 110) / 3
+// console.log(avgDolphins, avgKoalas)
+// if (avgDolphins > avgKoalas) {
+//     console.log(avgDolphins, "Dolphins wins!")
+// } else if (avgDolphins === avgKoalas) {
+//     console.log("it's a draw")
+// } else {
+//     console.log(avgKoalas, "Koalas wins!")
+// }
+
+//*2) 
+// const minScore = 100
+// const avgDolphins = (97 + 112 + 101) / 3
+// const avgKoalas = (109 + 95 + 123) / 3
+// console.log(avgDolphins, avgKoalas)
+// if (avgDolphins >= minScore && avgDolphins > avgKoalas) {
+//     console.log(avgDolphins, "Dolphins wins!")
+// } else if (avgKoalas >= minScore && avgKoalas > avgDolphins) {
+//     console.log(avgKoalas, "Koalas wins!")
+// } else if (avgDolphins === avgKoalas) {
+//     console.log("it's a draw")
+// }
+
+//*3)
+const avgDolphins = (97 + 112 + 101) / 3
+const avgKoalas = (109 + 95 + 106) / 3
+console.log(avgDolphins, avgKoalas)
+const minScore = 100
+if (avgDolphins === avgKoalas && avgDolphins >= 100 && avgKoalas >= 100) {
+    console.log("It's a draw")
+} else {
+    console.log("No team wins the trophy")
 }
