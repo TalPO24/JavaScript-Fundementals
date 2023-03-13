@@ -369,13 +369,43 @@ if (day === "monday") {
 */
 
 //* STATEMENTS and EXPRESSIONS
+//* expression produces a value
+//* whenever somthing end with a semicolon (;) that's a statment 
 /*
 3 + 4
 1991
 true && false && !false
 
 if (23 > 10) {
-    const str = '23 is bigger'; // whenever somthing end with a semicolon (;) that's then a statment 
+    const str = '23 is bigger';  
 }
 console.log(`I'm ${2037 - 1991} years old`)
 */
+
+//* THE CONDITIONAL (TERNARY) OPERATOR
+//* it's calld ternary because it has three parts 
+/*
+const age = 23
+    // age >= 18 ? console.log(`I like to drink wine`) : console.log(`I like to drink water`)
+
+const drink = age >= 18 ? 'wine' : 'water'
+console.log(drink)
+
+let drink2
+if (age >= 18) {
+    drink2 = 'wine'
+} else {
+    drink2 = 'water'
+}
+console.log(drink2)
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
+*/
+
+//* TK - 4
+// const billValue = 275
+// const billValue = 40
+const billValue = 430
+const tip = billValue >= 50 && billValue <= 300 ? (billValue * 15) / 100 : (billValue * 20) / 100
+const totalValue = billValue + tip
+console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value ${totalValue}`)
