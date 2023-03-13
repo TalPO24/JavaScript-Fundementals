@@ -328,7 +328,7 @@ if (avgDolphins === avgKoalas && avgDolphins >= 100 && avgKoalas >= 100) {
 */
 
 //* THE SWITCH STATMENT
-
+/*
 const day = 'monday'
 switch (day) {
     case 'monday': // day === monday
@@ -366,3 +366,16 @@ if (day === "monday") {
 } else {
     console.log("Not a valid week day")
 }
+*/
+
+//* STATEMENTS and EXPRESSIONS
+/*
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = '23 is bigger'; // whenever somthing end with a semicolon (;) that's then a statment 
+}
+console.log(`I'm ${2037 - 1991} years old`)
+*/
