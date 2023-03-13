@@ -289,31 +289,31 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 */
 
 //* TK-3
-
+/*
 //*1)
-// const avgDolphins = (96 + 108 + 89) / 3
-// const avgKoalas = (88 + 91 + 110) / 3
-// console.log(avgDolphins, avgKoalas)
-// if (avgDolphins > avgKoalas) {
-//     console.log(avgDolphins, "Dolphins wins!")
-// } else if (avgDolphins === avgKoalas) {
-//     console.log("it's a draw")
-// } else {
-//     console.log(avgKoalas, "Koalas wins!")
-// }
+const avgDolphins = (96 + 108 + 89) / 3
+const avgKoalas = (88 + 91 + 110) / 3
+console.log(avgDolphins, avgKoalas)
+if (avgDolphins > avgKoalas) {
+    console.log(avgDolphins, "Dolphins wins!")
+} else if (avgDolphins === avgKoalas) {
+    console.log("it's a draw")
+} else {
+    console.log(avgKoalas, "Koalas wins!")
+}
 
 //*2) 
-// const minScore = 100
-// const avgDolphins = (97 + 112 + 101) / 3
-// const avgKoalas = (109 + 95 + 123) / 3
-// console.log(avgDolphins, avgKoalas)
-// if (avgDolphins >= minScore && avgDolphins > avgKoalas) {
-//     console.log(avgDolphins, "Dolphins wins!")
-// } else if (avgKoalas >= minScore && avgKoalas > avgDolphins) {
-//     console.log(avgKoalas, "Koalas wins!")
-// } else if (avgDolphins === avgKoalas) {
-//     console.log("it's a draw")
-// }
+const minScore = 100
+const avgDolphins = (97 + 112 + 101) / 3
+const avgKoalas = (109 + 95 + 123) / 3
+console.log(avgDolphins, avgKoalas)
+if (avgDolphins >= minScore && avgDolphins > avgKoalas) {
+    console.log(avgDolphins, "Dolphins wins!")
+} else if (avgKoalas >= minScore && avgKoalas > avgDolphins) {
+    console.log(avgKoalas, "Koalas wins!")
+} else if (avgDolphins === avgKoalas) {
+    console.log("it's a draw")
+}
 
 //*3)
 const avgDolphins = (97 + 112 + 101) / 3
@@ -324,4 +324,45 @@ if (avgDolphins === avgKoalas && avgDolphins >= 100 && avgKoalas >= 100) {
     console.log("It's a draw")
 } else {
     console.log("No team wins the trophy")
+}
+*/
+
+//* THE SWITCH STATMENT
+
+const day = 'monday'
+switch (day) {
+    case 'monday': // day === monday
+        console.log('plan course structure')
+        console.log('Go to coding meetup')
+        break;
+    case 'tuesday':
+        console.log('Prepare theory cideos')
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code exampels')
+        break;
+    case 'friday':
+        console.log('Record videos')
+    case 'saturday':
+    case 'sunday':
+        console.log('enjoy the weekend')
+        break;
+    default:
+        console.log("Not a valid week day")
+}
+
+if (day === "monday") {
+    console.log('plan course structure')
+    console.log('Go to coding meetup')
+} else if (day === "tuesday") {
+    console.log('Prepare theory videos')
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code exampels')
+} else if (day === 'friday') {
+    console.log('Record videos')
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('enjoy the weekend')
+} else {
+    console.log("Not a valid week day")
 }
